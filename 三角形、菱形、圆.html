@@ -1,0 +1,107 @@
+
+<!-- 
+  本题共25分，每少一个效果扣5分。
+
+  本题很随意哈，颜色也很随意，你自己想什么色就什么色；
+
+  提示：
+    三角形，就是没有宽高、边框很粗、上下左右只有一边边框可显示的div；
+    菱形，就是两个三角形嘛；
+
+  PS：不要较真我在html代码里使用了style属性去写css，我只说了不让你们这么做，没说。。。。咳咳
+
+ -->
+
+<html>
+<head>
+  <style type="text/css">
+    .part1 :nth-child(-n+3){
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    }
+    .part1 :nth-child(n+4){
+    width: 0;
+    height: 0;
+    border-top:  20px solid transparent;
+    border-bottom:20px solid transparent;
+    }
+    .part1 .div1{
+    	  border-bottom: 30px solid gray;
+    }
+    .part1 .div2{
+    	  border-top: 30px solid red;
+    }
+    .part1 .div3{
+    	  border-left: 30px solid blue;
+    	  position: absolute;
+    	  top:220px;
+    }
+    .part1 .div4{
+    	  border-right: 30px solid green;
+    	  margin-left: 20px;
+    	  position: absolute;
+    	  top:300px;
+    }
+    .part2 :nth-child(-n+2){
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    }
+    .part2 .div1{
+    	  border-bottom: 30px solid gray;
+    }
+    .part2 .div2{
+    	  border-top: 30px solid gray;
+    }
+    .part3 :nth-child(-n+3){
+    	width: 50px;
+    	height: 50px;
+      
+    }
+    .part3 .div1{
+    	background-color: red;
+    	border-radius: 50% ;  
+    }
+    .part3 .div2{
+    	border: solid red;
+    	border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <p class="caption">第1部分 三角形</p>
+  <div class="part1">
+    <div class="div1">
+    </div>
+    <div style="margin: 40px;"></div>
+    <div class="div2"></div>
+    <div style="margin: 40px;"></div>
+    <div class="div3"></div>
+    <div style="margin: 40px;"></div>
+    <div class="div4"></div>
+  </div>
+
+  <hr/>
+
+  <p class="caption">第2部分 菱形</p>
+  <div class="part2">
+    <div class="div1"></div>
+    <div class="div2"></div>
+  </div>
+
+  <hr/>
+  
+  
+  <p class="caption">第3部分 圆形</p>
+  <div class="part3">
+    <div class="div1"></div>
+    <div style="margin-top: 40px;"></div>
+    <div class="div2"></div>
+    <div style="margin-top: 40px;"></div>
+  </div>
+
+</body>
+</html>

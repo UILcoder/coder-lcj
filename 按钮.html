@@ -1,0 +1,80 @@
+<!-- 
+  本题共25分，每少一个效果扣5分。
+
+  题目要求：
+    1、实现如图按钮效果（注意是一行）；
+    2、按钮互相之间需写边距，数值无所谓；
+    3、鼠标悬停某个按钮，按钮背景色全部变为边框色；
+
+  题目提示：
+    默认按钮：
+      背景色白色，边框颜色#ccc；
+    提交按钮：
+      字体色白色，背景色337ab7，边框色2e6da4；
+    保存按钮：
+      字体色白色，背景色5bc0de，边框色46b8da；
+    重置按钮：
+      字体色白色，背景色d9534f，边框色d43f3a；
+ -->
+
+
+<html>
+<head>
+<style type="text/css">
+  .btn-default{
+  	width: 80px;
+  	height: 50px;
+  	background-color: white;
+  	border:solid 2px #ccc;
+  	border-radius: 10px;
+  	margin: 15px;
+  }
+    .btn-submit{
+  	width: 80px;
+  	height: 50px;
+  	color: white;
+  	background-color: #337ab7;
+  	border:solid 2px #2e6da4;
+  	border-radius: 10px;
+  	margin: 15px;
+  }
+    .btn-save{
+  	width: 80px;
+  	height: 50px;
+  	color: white;
+  	background-color: #5bc0de;
+  	border:solid 2px #46b8da;
+  	border-radius: 10px;
+  	margin: 15px;	
+  }
+    .btn-reset{
+  	width: 80px;
+  	height: 50px;
+  	color: white;
+  	background-color: #d9534f;
+  	border:solid 2px #d43f3a;
+  	border-radius: 10px;
+  	margin: 15px;
+  }
+  .btn-default:hover{
+  	background-color: #ccc;
+  }
+   .btn-submit:hover{
+  	background-color: #2e6da4;
+  }
+   .btn-save:hover{
+  	background-color: #46b8da;
+  }
+   .btn-reset:hover{
+  	background-color: #d43f3a;
+  }
+</style>
+</head>
+
+<body>
+	<button class="btn btn-default">默认</button>
+	<button class="btn btn-submit" type="submit">提交</button>
+	<button class="btn btn-save" type="button">保存</button>
+	<button class="btn btn-reset" type="reset">重置</button>
+</body>
+</html>

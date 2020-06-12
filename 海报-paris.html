@@ -1,0 +1,73 @@
+<!-- 
+	本题共25分，每少一个效果扣5分。
+	
+	题目提示及要求：
+		本题，我提供的body部分不能改啊，不！能！改！啊！你就写css就行；
+
+		背景图：
+			在img文件夹里面，webp格式，喜欢的童鞋可以找度娘了解一下啦～
+		标题文字：
+			颜色，可使用网页自带的选色器选择图片中铁塔颜色，或者你写成#ee9e38也可以；
+			字体样式：Georgia；
+		右下角文字：
+			字体样式：STXihei；
+			行高要设置，注意文字排版方向；
+ -->
+
+
+
+<html>
+<head>
+<style type="text/css">
+     body{
+		background: url("./img/paris.webp" ) no-repeat center;
+		background-size: 100%;
+	}
+	.title{
+		width:500px;
+		height:150px;
+		border: solid 1px white;
+		position: absolute;
+		top: 60px;
+		left: 410px;
+	}
+	.head{
+		width: 800px;
+		height: 100px;
+		border: solid 1px white;
+		color: #ee9e38;
+		font:60px Georgia;
+		text-align: center;
+		line-height: 95px;
+		margin: 25px 20px 20px -170px;
+	}
+	.content{
+		font: 8px STXihei;
+		color: white;
+		writing-mode: vertical-rl;
+		line-height: 2em;
+		width: 100px;
+		height: 150px;
+		position:absolute;
+		right:110px;
+		bottom:0;
+		white-space: pre;
+	}
+</style>
+</head>
+
+<body>
+	
+	<div class="title">
+		<div class="head">
+			HELLO, PARIS
+		</div>
+	</div>
+	<div class="content">
+		在塞纳河与推理之间
+		谁在选择死亡
+		在绝望与巴黎之间
+		唯铁塔支持天堂
+	</div>
+</body>
+</html>
