@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    div{
+      display: flex;
+      flex-direction: column;
+      height:100vh;
+
+    }
+    header ,footer{
+      border: solid 1px red;
+      flex-grow: 1;
+      background-color: royalblue;
+    }
+
+    main{
+      display: flex;
+      flex-grow: 10;
+    }
+    aside{
+      flex-grow: 1;
+      border: solid 1px red;
+      background-color: salmon;
+    }
+    article{
+      flex-grow: 3;
+      border: solid 1px red;
+      background-color: seagreen;
+    }
+  </style>
+</head>
+    <body>
+      <div>
+      <header>
+        <p>网页头部</p>
+      </header>
+      <main>
+        <aside>左</aside>
+        <article>中</article>
+        <aside>右</aside>
+      </main>
+      <footer>
+        <p>网页底部</p>
+      </footer>
+    </div>
+    </body>
+</html>
