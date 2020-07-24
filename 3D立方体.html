@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+      /*立方体效果*/
+      .wrap {
+        width: 120px;
+        height: 200px;
+        margin: 20px;
+        position: fixed;
+        top: 100px;
+        left: 200px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        z-index: 22;
+      }
+    
+      .cube {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        transform-style: preserve-3d;
+        transform: rotateX(-30deg) rotateY(-80deg);
+        animation: rotate linear 20s infinite;
+      }
+    
+      @-webkit-keyframes rotate {
+        from {
+          transform: rotateX(0deg) rotateY(0deg);
+        }
+    
+        to {
+          transform: rotateX(360deg) rotateY(360deg);
+        }
+      }
+    
+      .cube div {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        opacity: 0.8;
+        transition: all .4s;
+        
+      }
+    
+      .cube .out_front {
+         border: solid 1px black;
+        transform: rotateY(0deg) translateZ(60px);
+      }
+    
+      .cube .out_back {
+         border: solid 1px black;
+        transform: translateZ(-60px) rotateY(180deg);
+      }
+    
+      .cube .out_left {
+         border: solid 1px black;
+        transform: rotateY(-90deg) translateZ(60px);
+      }
+    
+      .cube .out_right {
+         border: solid 1px black;
+        transform: rotateY(90deg) translateZ(60px);
+      }
+    
+      .cube .out_top {
+         border: solid 1px black;
+        transform: rotateX(90deg) translateZ(60px);
+      }
+    
+      .cube .out_bottom {
+         border: solid 1px black;
+        transform: rotateX(-90deg) translateZ(60px);
+      }
+    </style>
+    </head>
+    
+    <body>
+      <div class="wrap">
+        <div class="cube">
+          <div class="out_front"></div>
+          <div class="out_back"></div>
+          <div class="out_left"></div>
+          <div class="out_right"></div>
+          <div class="out_top"></div>
+          <div class="out_bottom"></div>
+        </div>
+      </div>
+    </body>
+</html>
